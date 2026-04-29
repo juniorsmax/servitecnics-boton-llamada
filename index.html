@@ -21,7 +21,7 @@
       --accent:        #e30613;
       --success:       #16a34a;
       --light-bg:      #f0f5ff;
-      --dark-bg:       #001a4d;
+      --dark-bg:       #0d2d6b;
       --text-dark:     #1e293b;
       --text-muted:    #64748b;
       --border:        #e2e8f0;
@@ -35,7 +35,7 @@
     h1,h2,h3,h4,h5 { font-family: 'Poppins', sans-serif; font-weight: 700; }
 
     /* NAVBAR */
-    .navbar { background: var(--primary); padding: 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 16px rgba(0,61,165,0.3); }
+    .navbar { background: rgba(0,61,165,0.88); backdrop-filter: blur(10px); padding: 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 16px rgba(0,61,165,0.3); }
     .navbar-brand { color: #fff !important; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; }
     .navbar-brand span { color: #e0e8ff; font-weight: 400; font-size: 0.82rem; display: block; }
     .nav-link { color: rgba(255,255,255,0.85) !important; font-weight: 500; padding: 6px 14px !important; border-radius: 8px; transition: background 0.2s; }
@@ -47,7 +47,7 @@
 
     /* HERO */
     #hero { position: relative; min-height: 85vh; display: flex; align-items: center; overflow: hidden; background: var(--dark-bg); }
-    #hero .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,29,77,0.95) 0%, rgba(0,61,165,0.75) 100%); z-index: 1; }
+    #hero .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,29,77,0.78) 0%, rgba(0,61,165,0.55) 100%); z-index: 1; }
     #hero .container { position: relative; z-index: 2; }
     .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #e0e8ff; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 6px 16px; border-radius: 50px; margin-bottom: 20px; }
     .hero-title { font-size: clamp(1.9rem, 4.5vw, 3.2rem); color: #fff; line-height: 1.15; margin-bottom: 20px; }
@@ -289,7 +289,7 @@
 </section>
 
 <!-- CTA FINAL -->
-<section style="padding:80px 0;background:var(--primary);">
+<section style="padding:80px 0;background:linear-gradient(135deg,#1a4db5 0%,#003DA5 100%);">
   <div class="container text-center">
     <h2 style="color:#fff;margin-bottom:16px;">¿Tu electrodoméstico Bosch tiene un problema?</h2>
     <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;margin-bottom:32px;">Llámanos ahora y un técnico irá a tu domicilio hoy mismo.</p>
