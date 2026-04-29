@@ -49,11 +49,10 @@
     .reviewer-name{font-weight:700;font-size:0.88rem;color:var(--primary);}
     .reviewer-appliance{font-size:0.8rem;color:var(--text-muted);}
     .google-badge{display:flex;align-items:center;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);}
-    .call-float{position:fixed;bottom:28px;right:28px;z-index:9999;background:var(--accent);border-radius:50px;display:flex;align-items:center;gap:10px;padding:14px 22px;box-shadow:0 4px 24px rgba(227,6,19,0.5);text-decoration:none;color:#fff;font-weight:700;font-size:0.95rem;animation:call-pulse 2.5s infinite;transition:transform 0.2s,box-shadow 0.2s;}
-    .call-float:hover{transform:scale(1.05);animation:none;box-shadow:0 8px 32px rgba(227,6,19,0.7);color:#fff;}
-    .call-float i{font-size:1.4rem;}
-    @keyframes call-pulse{0%{box-shadow:0 4px 24px rgba(227,6,19,0.5);}50%{box-shadow:0 4px 40px rgba(227,6,19,0.8);}100%{box-shadow:0 4px 24px rgba(227,6,19,0.5);}}
-    @media(max-width:576px){.call-float span{display:none;}.call-float{border-radius:50%;width:58px;height:58px;padding:0;justify-content:center;}}
+    .call-float { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; z-index: 9999; background: var(--accent); display: flex; align-items: center; justify-content: center; gap: 12px; padding: 18px; text-decoration: none; color: #fff; font-weight: 700; font-size: 1.15rem; animation: call-pulse 2s infinite; transition: background 0.2s; border: none; }
+    .call-float:hover { background: #b00510; color: #fff; animation: none; }
+    .call-float i { font-size: 1.5rem; }
+    @keyframes call-pulse { 0% { box-shadow: 0 -6px 30px rgba(227,6,19,0.4); } 50% { box-shadow: 0 -6px 60px rgba(227,6,19,0.95); } 100% { box-shadow: 0 -6px 30px rgba(227,6,19,0.4); } }
     #cookieBanner{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9998;background:#001a4d;color:#fff;padding:16px 22px;box-shadow:0 -4px 24px rgba(0,0,0,0.25);}
     footer{background:var(--dark-bg);color:rgba(255,255,255,0.75);padding:40px 0 20px;}
     footer a{color:rgba(255,255,255,0.65);text-decoration:none;display:block;margin-bottom:6px;font-size:0.88rem;}
